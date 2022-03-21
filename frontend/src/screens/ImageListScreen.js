@@ -43,6 +43,10 @@ function FileListScreen() {
         <>
           {imagesCount === 0 ? (
             <div className=" text-blue-400 h-screen text-center flex flex-col justify-center items-center">
+              <img
+                className="w-24 h-auto"
+                src="https://img.icons8.com/external-justicon-flat-justicon/100/000000/external-couple-romantic-love-justicon-flat-justicon-1.png"
+              />
               <span className="text-2xl">No memories were found!</span>
               <p>🤗 Add some memories Using button on bottom right corner.</p>
             </div>
