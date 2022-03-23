@@ -64,7 +64,7 @@ function FileListAsGrid({ images }) {
 
 const ImageCard = ({ image, index }) => {
   const [imageUrl, setImageUrl] = useState('');
-  const { ref: imageRef, inView, entry } = useInView({});
+  const { ref: imageRef, inView, entry } = useInView({ triggerOnce: true });
   useEffect(() => {
     if (!imageUrl) {
       setImageUrl(image.source);
