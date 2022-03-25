@@ -18,17 +18,9 @@ function FileListAsGrid({ images }) {
         ...currentLoadedImages,
         ...images.slice(
           currentLoadedImages.length,
-          currentLoadedImages.length + 20
+          currentLoadedImages.length + 10
         ),
       ]);
-      console.log('currentloadedimages', currentLoadedImages);
-      console.log(
-        'slices',
-        images.slice(
-          currentLoadedImages.length,
-          currentLoadedImages.length + 10
-        )
-      );
     }
   }, [inView]);
 
